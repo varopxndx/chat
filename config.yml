@@ -1,0 +1,10 @@
+port: 8080
+database:
+  name: chat
+  host: postgres-container
+  port: 5432
+  user: postgres
+broker:
+  url: amqp://guest:guest@rabbit-broker:5672/
+  queue-name: stockQueue
+stooq-url: https://stooq.com/q/l/?s=%s&f=sd2t2ohlcv&h&e=csv

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link href="assets/css/form.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="alert-message" id="alert-login"> </div>
+    <div class="form-block">
+        <form id="login-form">
+        <h1>Chat  <img src="assets/image/chat-icon.png" width="40px" height="30px"/></h1>
+        <input type="text" value="" placeholder="Username" id="username" name="username" required/>
+        <input type="password" value="" placeholder="Password" id="password" name="password" required/>
+
+        <label for="rooms">Choose a chat room:</label>
+        <select name="rooms" id="room" form="login-form">
+            <option value="free">Free</option>
+            <option value="premium">Premium</option>
+        </select>
+        
+        <button id="login-button" type="submit">Sign in</button>
+        </form>
+        <br/>
+        <a href="signup.html">Don't have an account yet? Sign up!</a>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
